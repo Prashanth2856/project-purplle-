@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/7fe5a042ed.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <link rel="stylesheet" href="basket.css" />
+
+  <body>
+    <div class="nav">
+       <div class="navMiddleContainer">
+          <div class="spaceBetweenNav"></div>
+          <div class="navMid">
+            <img
+              src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"
+              id="homePageNavigation"
+              alt=""
+            />
+            <img
+              src=" https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
+              id="tryElite"
+              alt=""
+            />
+          </div>
+          <div class="navRight">
+            <div class="icons" id="wishList">
+                <i class="fa fa-search icon" id="search-icon"></i>
+            </div>
+            <div class="icons" id="signUp"><i class="far fa-heart"></i></div>
+            <div class="icons" id="basket">
+                <i class="far fa-smile"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container">
+      <div class="left">
+        <div class="couponBar">
+           <img class="couponBarImage" src="https://media6.ppl-media.com/mediafiles/ecomm/home/1543587824_logo.png" alt="">
+           <div> APPLY COUPON & GET FLAT 30% OFF  <br><div class="useCode"> Use Code: <h3> PURPLLE30</h3></div></div> 
+         </div> 
+        <h2>Available Offers(1)</h2>
+        <div class="offerDetail">
+          <div class="priceTag"><i class="fa fa-tag"></i></div>
+          <p>
+            Add any 3 or more of your favourite products from Good Vibes to your
+            cart & avail FLAT 35% Off on the MRP Value of the products. The
+            offer is not valid on Sheet Mask.
+            <span class="redTC">T&C / view products</span>
+          </p>
+        </div>
+        <div class="myCartCount">
+          <span class="myCart" id="myCart111">My Cart()</span>
+          <span class="shopMore" id="shopMore" onclick="shopMore()">Shop More ></span>
+        </div>
+        <div class="fatchedProducts" id="fatchedProducts"></div>
+      </div>
+      <div class="right">
+        <div class="safePayment">
+          <img
+            src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515664301_shield.png"
+            alt=""
+          />
+          <p>
+            <h3>100% Safe Payments</h3><span class="genuine"
+              >Genuine Products | Easy Returns</span
+            >
+          </p>
+        </div>
+        <div class="pincode">
+          <input type="number" placeholder="Enter Pincode" />
+          <h4>CHECK DELIVERY</h4>
+        </div>
+        <hr />
+        <div class="coupons">
+          <input type="text" name="" id="couponInput" class="couponInput" placeholder="Enter Coupon">
+          <h4 id="apply_coupon" onclick="takeInput()">APPLY COUPON</h4>
+        </div>
+        <hr />
+        <div class="priceDetails">
+          <p>Price Details:</p>
+          <div class="total_mrp">
+            <div class="t_mrp">Total MRP:</div>
+            <div class="t_price" id="t_price">₹0</div>
+          </div>
+          <div class="savings_on_mrp">
+            <div class="s_mrp">Savings on MRP:</div>
+            <div class="s_price" id="s_price">-₹0</div>
+          </div>
+          <div class="sub_total">
+            <div class="sub_mrp">Subtotal:</div>
+            <div class="sub_price" id = "sub_price">₹0</div>
+          </div>
+          <div class="shipping_charges">
+            <div class="shipping">Shipping charges:</div>
+            <div class="shipping_price">₹49</div>
+          </div>
+          <div class="coupon_discount">
+            <div class="coupon">Coupon Discount:</div>
+            <h4 class="apply_coupon" id="c">APPLY COUPON</h4>
+          </div>
+        </div>
+        <hr />
+        <div class="order_total">
+          <h3 class="o_total_mrp">Order total:</h3>
+          <h3 class="o_total_price" id="o_total_price">₹0</h3>
+        </div>
+        <div class="you_save">
+          <div class="save">You Save:</div>
+          <div class="save_price" id="save_price">₹0</div>
+        </div>
+        <button onclick="checkout()" class="place_order_btn">
+          PLACE ORDER
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="basket.js"></script>

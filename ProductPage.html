@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/7fe5a042ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Below Link for Scroll up button -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="ProductPage.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="navUp">
+          <div class="navUpLinks">
+            <i class="fas fa-mobile-alt" id="mobileIcon"></i>
+            <a href="">DOWNLOAD APP</a>
+            |
+            <a href="">SUPPPORT</a>
+            |
+            <a href="">TRACK ORDER</a>
+          </div>
+        </div>
+        <div class="navMiddleContainer">
+          <div class="navLeft">
+            <div class="input-container">
+              <input
+                class="input-field"
+                type="text"
+                placeholder="What are you looking for?"
+                name="search"
+              />
+              <i class="fa fa-search icon" id="search-icon"></i>
+            </div>
+          </div>
+          <div class="spaceBetweenNav"></div>
+          <div class="navMid">
+            <img
+              src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"
+              id="homePageNavigation"
+              alt=""
+            />
+            <img
+              src=" https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
+              id="tryElite"
+              alt=""
+            />
+          </div>
+          <div class="spaceBetweenNav"></div>
+          <div class="navRight">
+            <div class="icons" id="wishList">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="icons" id="signUp"><i class="far fa-smile"></i>`</div>
+            <div class="icons" id="basket">
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+          </div>
+        </div>
+        <div class="navBottom">
+          <ul class="navBottom_links">
+            <li><a href=""> SHOP CATEGORIE </a></li>
+            <li><a href="">BRANDS</a></li>
+            <li><a href="">OFFERS</a></li>
+            <li><a href="">NEW</a></li>
+            <li><a href="">SPLURGE</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="slider">
+        <div class="sliderMain" id="slider_main_div">
+          <div class="slide left">
+            <span id="leftMoveSlider">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point1"></span>
+            <span id="point2"></span>
+            <span id="point3"></span>
+            <span id="point4"></span>
+            <span id="point5"></span>
+          </div>
+        </div>
+      </div>  
+  </div>
+  <div class="gap">
+    
+  </div>
+      <!-- Below button for scroll up button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+  <div class="avBottom">
+    <ul class="avBottom_links">
+      <div class="dropdown dddForRemoveLeftLine">
+      <div class="dropLink">
+        <li><a href=""> Brands <i class="fas fa-sort-down"></i></i></a></li> 
+      </div>
+        <div class="dropdown-content ">
+          <div class="products-menu-dropDown">
+               <ul class="products-menu-dropDown-links">
+                  <li onclick="brandDisplay1()"><a>Lakme</a></li>
+                 
+                 <!-- <div class="makeup-content">
+                     <div class="makeup-menu-dropdown">
+                       <ul class="makeup-manu-dropDown-links">
+                           <li> <a href="">test</a></li>
+                           <li> <a href="">test2</a></li>
+                       </ul>
+                     </div>
+                 </div> -->
+                 <li onclick="brandDisplay2()"><a>wow</a></li>
+                 <li onclick="brandDisplay3()"><a >mama Earth</a></li>
+                 <li onclick="brandDisplay4()"><a >Good Vibes</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+      
+      <div class="dropdown">
+        <div class="dropLink">
+          <li><a href="">Price Range  <i class="fas fa-sort-down"></i></a></li>
+        </div>
+        <div class="dropdown-content brands">
+          <div class="products-menu-dropDown ">
+               <ul class="products-menu-dropDown-links">
+               <li onclick="priceRange()"><a>100rs-200rs</a></li>
+                <li onclick="priceRange1()"><a>200rs-300rs</a></li>
+                <li onclick="priceRange2()"><a>300rs & above</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+      <div class="dropdown">
+       <div class="dropLink">
+        <li><a href="">Discounts  <i class="fas fa-sort-down"></i></i></a></li>
+       </div>
+        <div class="dropdown-content brands">
+          <div class="products-menu-dropDown brandsImages">
+               <ul class="products-menu-dropDown-links">
+                <li onclick="discountRange()"><a>10%-20%</a></li>
+                <li onclick="discountRange1()"><a>20%-30%</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+     
+      <div class="dropdown">
+       <div class="dropLink">
+        <li><a href="">Sort By Relevance  <i class="fas fa-sort-down"></i></a></li> 
+       </div>
+        <div class="dropdown-content brands">
+          <div class="products-menu-dropDown brandsImages">
+               <ul class="products-menu-dropDown-links">
+              <li onclick="sortHIghTOLow()"><a>High to low</a></li>
+               <li  onclick="sortLowTOHigh()"><a>low to high</a></li>
+               </ul>
+             </div>
+          </div>
+      </div>
+    </ul>
+  </div>
+</nav>
+</div>
+<div class="gap">
+    
+</div>
+<div class="gap2"></div>
+  <div class="container">
+      <h2 class="productHeading">ALL PRODUCTS</h2>
+      
+      <div class="productList" id="productList"></div>
+      <br />
+      <div class="slider">
+        <div class="sliderMain" id="slider_main_div1">
+          <div class="slide left">
+            <span id="leftMoveSlider1">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider1">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point11"></span>
+            <span id="point12"></span>
+            <span id="point13"></span>
+          </div>
+        </div>
+      </div>
+      <br /><br />
+    </div>
+  </body>
+</html>
+<script src="ProductPage.js"></script>

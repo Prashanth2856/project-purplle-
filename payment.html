@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="navMiddleContainer">
+        <div class="navMid" onclick="gotoHome()">
+          <img
+            src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"
+            id="homePageNavigation"
+            alt=""
+          />
+          <img
+            src=" https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
+            id="tryElite"
+            alt=""
+          />
+        </div>
+        <div class="navRight">
+          <div class="icons" id="wishList"><i class="fas fa-lock"></i>Secure Payment</div>
+          <div class="icons" id="signUp"><i class="fas fa-certificate"></i>100% Genuine Products</div>
+          <div class="icons" id="basket"><i class="fas fa-rupee-sign"></i>Cash On Delivery</div>
+        </div>
+      </div>
+    </div>
+    <div id="container">
+      <div class="payment">
+        <div id="paymentmethod">
+          <div class="step-progressbar">
+            <ul>
+              <li>Login Details</li>
+              <li>Delivery Address</li>
+              <li class="active">Payment Method</li>
+            </ul>
+          </div>
+        </div>
+        <div id="freedelivery">
+          Free shiping applied on your First order. Welcome to Purplle!
+        </div>
+        <div>
+          <div class="header">Credit/Debit Card</div>
+          <div id="form1">
+            <div><input type="text" placeholder="Name on card" /></div>
+            <div style="width: 40%">
+              <input type="text" placeholder="Card Number" />
+            </div>
+            <div
+              style="
+                float: right;
+                width: 18%;
+                margin-right: 150px;
+                display: inline-flex;
+              "
+            >
+              <input type="password" placeholder="CVV" /><img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1516175146_cvv.jpg"
+                height="30px;"
+              />
+            </div>
+            <div style="width: 20%">
+              <input type="text" placeholder="Expiry MM" />
+            </div>
+            <div style="width: 20%; float: right; margin-right: 255px">
+              <input type="text" placeholder="Expiry YY" />
+            </div>
+            <br />
+            <input
+              type="checkbox"
+              style="margin-left: 20px; margin-top: 15px; font-size: 14px"
+            /><label>Save card for future use</label>
+            <br>
+              <div
+                style="
+                  width: 18%;
+                  background-color: #e40980;
+                  color: rgb(238, 236, 236);
+                  text-align: center;
+                  border-radius: 5px;
+                  cursor: pointer;
+                  margin-bottom: 11px;
+                  margin-top: 16px;
+                "
+              >
+                <h2 id="uniqueH32" style="margin-top: 10px;">PAY</h2>
+              </div>
+            
+          </div>
+        </div>
+        <div>
+          <div class="header">Net Banking</div>
+          <div style="display: flex">
+            <div class="banklogo">
+              <img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1516691298_axis-bank.jpg"
+                style="border-radius: 50%"
+              />
+            </div>
+            <div class="banklogo">
+              <img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965305_hdfc.png"
+              />
+            </div>
+            <div class="banklogo">
+              <img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965305_icici.png"
+              />
+            </div>
+            <div class="banklogo">
+              <img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965308_sbi.png"
+              />
+            </div>
+            <div class="banklogo">
+              <img
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1560173529_kotak_logo.png"
+              />
+            </div>
+          </div>
+          <div style="display: flex">
+            <div style="margin-left: 25px" class="banknames">AXIS</div>
+            <div style="margin-left: 52px" class="banknames">HDFC</div>
+            <div style="margin-left: 50px" class="banknames">ICICI</div>
+            <div style="margin-left: 59px" class="banknames">SBI</div>
+            <div style="margin-left: 53px" class="banknames">KOTAK</div>
+          </div>
+          <div style="margin: 20px">
+            <select>
+              <option>Select a Bank</option>
+              <option>SBI</option>
+              <option>BOB</option>
+              <option>Canara Bank</option>
+              <option>Bank of Maharastra</option>
+              <option>Bank of India</option>
+            </select>
+          </div>
+          <div
+            style="
+              width: 24%;
+              height: 38px;
+              background-color: #e40980;
+              color: rgb(238, 236, 236);
+              text-align: center;
+              border-radius: 5px;
+              margin-left: 20px;
+              cursor: pointer;
+              margin-bottom: 11px;
+              margin-top: 16px;
+              padding-top: 2px;
+            ">
+            <h3 id="uniqueH3" style="margin-top: 10px;">PAY</h3>
+          </div>
+        </div>
+        <div>
+          <div class="header">Wallet</div>
+          <div class="button">
+            <input type="radio" id="olamoney" value="ola" />
+            <label for="olamoney"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1543842315_ola-money-logo_merchant2x.png"
+              />
+              Olamoney Postpaid + Wallet</label
+            >
+            <hr class="hrLine"/>
+            <input type="radio" id="paytm" value="paytm" />
+            <label for="paytm"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1577193138_paytm.png"
+              />
+              Paytm</label
+            >
+            <hr class="hrLine"/>
+            <input type="radio" id="mobikwik" value="mobikwik" />
+            <label for="mobikwik"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965307_mobikwik.png"
+              />
+              Mobikwik</label
+            >
+          </div>
+        </div>
+        <div>
+          <div class="header">UPI</div>
+          <div class="button">
+            <input type="radio" id="olamoney" value="ola" size="20px" />
+            <label for="olamoney"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1577193138_bhim-upi.png"
+              />UPI</label
+            >
+            <hr class="hrLine"/>
+            <input type="radio" id="paytm" value="paytm" />
+            <label for="paytm"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1558704583_paytmupi.png"
+              />Paytm UPI</label
+            >
+            <hr class="hrLine"/>
+            <input type="radio" id="mobikwik" value="mobikwik" />
+            <label for="mobikwik"
+              ><img class="img"
+                src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1554965305_google-pay.png"
+              />Google Pay</label
+            >
+          </div>
+        </div>
+        <div>
+          <div class="header">Case on Delivery</div>
+          <div class="button">
+            <input type="radio" id="olamoney" value="ola" />
+            <label for="olamoney"><img src="" />Pay on Delivery</label>
+          </div>
+        </div>
+        <div>
+          <div class="header">Zest Mony</div>
+          <div class="button">
+            <input type="radio" id="olamoney" value="ola" />
+            <label for="olamoney"><img src="" />Zest Money</label>
+          </div>
+        </div>
+      </div>
+      <div class="order">
+        <div class="rightdiv">
+          <div class="needhelp">
+            <p>Need Help? 92233 00222</p>
+          </div>
+          <div class="login">
+            <p class="mail">
+              <span class="bold"> Login Details</span
+              ><br />dranjangowda@gmail.com
+            </p>
+            <p class="change">CHANGE</p>
+          </div>
+          <hr class="hrLine"/>
+          <div class="showitem bold">
+            <p id="itemCount">Show Items in Order ()</p>
+          </div>
+          <hr class="hrLine"/>
+          <div class="priceDetails bold">
+            <p>Price Details</p>
+          </div>
+          <div class="total_mrp">
+            <div class="t_mrp">Total MRP:</div>
+            <div class="t_price" id="t_price">₹0</div>
+          </div>
+          <div class="savings_on_mrp">
+            <div class="s_mrp">Savings on MRP:</div>
+            <div class="s_price pink" id="s_price">-₹0</div>
+          </div>
+          <div class="sub_total">
+            <div class="sub_mrp">Subtotal:</div>
+            <div class="sub_price" id="sub_price">₹0</div>
+          </div>
+          <div class="shipping_charges">
+            <div class="shipping">Shipping charges:</div>
+            <div class="shipping_price" id="shipping_price">₹49</div>
+          </div>
+          <hr class="hrLine"/>
+          <div class="order_total">
+            <h3 class="o_total_mrp">Order total:</h3>
+            <h3 class="o_total_price" id="o_total_price">₹0</h3>
+          </div>
+          <div class="you_save">
+            <div class="save">You Save:</div>
+            <div class="save_price pink" id="save_price">₹0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>
+<script
+src="https://kit.fontawesome.com/7fe5a042ed.js"
+crossorigin="anonymous"
+></script>
+<script src="" async defer></script>
+<script src="payment.js">
+
+</script>

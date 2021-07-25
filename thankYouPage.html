@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/7fe5a042ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://kit.fontawesome.com/7fe5a042ed.js"
+    crossorigin="anonymous"
+  ></script>
+  </head>
+  <style>
+
+  .navMiddleContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  }
+  #tryElite{
+    width: 50px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .navMid{
+    width: 40%;
+  }
+  .navMid > img{
+    height: 60.5938px;
+    width: 110px;
+  }
+  .navMid > img:hover{
+    cursor: pointer;
+  }
+  .navRight{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .icons{
+  margin-top: 100px;
+  margin: 20px;
+  font-size: 40px;
+  color: rgb(128, 140, 147);
+  }
+  .icons:hover{
+    cursor: pointer;
+  }
+  .navBottom_links li{
+    display: inline;
+    margin:0px 30px 20px 0px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .navBottom_links a{
+    text-decoration: none;
+    color: black;
+  }
+  .navBottom_links a:hover{
+    border-bottom: solid 3px rgb(234,75,121);  
+    transform: scaleX(1);  
+    transition:  250ms ease-in-out;
+  }
+  .navBottom_links{
+    display: flex;
+    justify-content: center;
+  }
+  #search-icon{
+      font-size: 35px;
+  }
+
+    #thankyou-container {
+      width: 60%;
+      margin: 8% auto 2%;
+      height: 400px;
+      border: 1px solid #dfdfdf;
+      font-family: sans-serif;
+    }
+    #tick-mark {
+      position: relative;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+    }
+
+    #tick-mark::before {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      height: 50%;
+      width: 3px;
+      background-color: #336699;
+      content: "";
+      transform: translateX(10px) rotate(-45deg);
+      transform-origin: left bottom;
+    }
+
+    #tick-mark::after {
+      position: absolute;
+      left: 30;
+      bottom: 0;
+      height: 3px;
+      width: 100%;
+      background-color: #336699;
+      content: "";
+      transform: translateX(10px) rotate(-45deg);
+      transform-origin: left bottom;
+    }
+    .dot {
+      height: 60px;
+      width: 60px;
+      background-color: #e40980;
+      border-radius: 50%;
+      display: inline-block;
+      margin-top: 21px;
+      text-align: center;
+      margin-left: -30px;
+      border: 5px solid white;
+    }
+    .symbol {
+      font-size: 40px;
+      color: #fff;
+    }
+    .para {
+      float: right;
+      margin-top: 23px;
+      line-height: 1.5;
+      margin-right: 45%;
+      letter-spacing: 0.5px;
+      font-size: 12px;
+    }
+    .bold {
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .thankyou {
+      background-color: #f9d3e8;
+      color: #566770;
+      height: 110px;
+    }
+    .communication {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      color: #566770;
+      margin: 3% 2%;
+    }
+    #order-summary-container {
+      width: 75%;
+      height: 200px;
+      font-family: sans-serif;
+      color: #566770;
+      font-size: 12px;
+
+      line-height: 2.5;
+      letter-spacing: 0.8px;
+    }
+    .head {
+      font-size: 14px;
+      font-weight: 550;
+    }
+    .order-summary p {
+      margin-left: 4%;
+      line-height: 1;
+    }
+    .details {
+      float: right;
+      line-height: 1.7;
+      margin-top: 2%;
+      margin-right: -182px;
+    }
+    .order-summary {
+      float: left;
+    }
+    .continue {
+      margin-left: 45%;
+      background-color: #e40980;
+      padding: 10px 25px;
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 1.5px;
+      border: none;
+    }
+  </style>
+  <body>
+    <div class="navMiddleContainer">
+      <div class="spaceBetweenNav"></div>
+      <div class="navMid">
+        <img
+          src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"
+          id="homePageNavigation"
+          alt=""
+        />
+        <img
+          src=" https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
+          id="tryElite"
+          alt=""
+        />
+      </div>
+
+      <div class="navRight">
+        <div class="icons" id="wishList">
+            <i class="fa fa-search icon" id="search-icon"></i>
+        </div>
+        <div class="icons" id="signUp"><i class="far fa-heart"></i></div>
+        <div class="icons" id="basket">
+            <i class="far fa-smile"></i>
+        </div>
+      </div>
+      
+    </div>
+    <!-- -------------------- --> -->
+    <div id="thankyou-container">
+      <div class="thankyou">
+        <div class="dot">
+          <span class="symbol">&#10003;</span>
+        </div>
+        <div class="para">
+          <p>
+            <span class="bold"> Thank You SO DA JAGADISH !</span><br />Your
+            Order (Order Id 20210717255156) has been placed successfully.
+          </p>
+        </div>
+      </div>
+
+      <div class="communication">
+        <!-- <span><i class='far fa-envelope-open' style='font-size:50px'>&#xf2b6;</i></span> -->
+        <p>
+          You will shortly receive an order verification E-mail & SMS confirming
+          your order details.
+        </p>
+      </div>
+      <div id="order-summary-container">
+        <div class="order-summary">
+          <p class="head">ORDER SUMMARY</p>
+          <p>Order Date: Jul 26, 2021</p>
+          <ul>
+            <li>Lakme Blush & Glow Peach Gel Face Wash (100 g)</li>
+            <li>WOW Anti Acne Neem & Tea Tree Face Wash (100 ml)</li>
+            <li>Good Vibes Lightening Face Wash - Mulberry (120 ml)</li>
+            <li>
+              Mamaearth CoCo Facewash, with Coffee & Cocoa for Skin (200 ml)
+            </li>
+          </ul>
+        </div>
+        <div class="details">
+          <span class="head">SHIPPING DETAILS</span>
+          <p class="font14">
+            <span>SO DA JAGADISH</span><br />
+            <span>KANCHINAKAL DURGAALDUR</span><br />
+            <span>Chickmagalur</span><br />
+            <span>Karnataka-577101</span><br />
+            <span>6363076297</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <button onclick="homePage()" class="continue">CONTINUE</button>
+  </body>
+</html>
+<script>
+  function homePage() {
+    window.location.href = "LandingPage.html";
+  }
+</script>

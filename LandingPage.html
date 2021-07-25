@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Below Link for Scroll up button -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="LandingPage.css" />
+    <script
+      src="https://kit.fontawesome.com/7fe5a042ed.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="navUp">
+          <div class="navUpLinks">
+            <i class="fas fa-mobile-alt" id="mobileIcon"></i>
+            <a href="">DOWNLOAD APP</a>
+            |
+            <a href="">SUPPPORT</a>
+            |
+            <a href="">TRACK ORDER</a>
+          </div>
+        </div>
+        <div class="navMiddleContainer">
+          <div class="navLeft">
+            <div class="input-container">
+              <input
+                class="input-field"
+                type="text"
+                placeholder="What are you looking for?"
+                name="search"
+              />
+              <i class="fa fa-search icon" id="search-icon"></i>
+            </div>
+          </div>
+          <div class="spaceBetweenNav"></div>
+          <div class="navMid">
+            <img
+              src="https://media6.ppl-media.com/static/purplle/img/purplle-logo-1.svg"
+              id="homePageNavigation"
+              alt=""
+            />
+            <img
+              src=" https://media6.ppl-media.com/mediafiles/ecomm/promo/1537798844_try-logo-3x.png"
+              id="tryElite"
+              alt=""
+            />
+          </div>
+          <div class="spaceBetweenNav"></div>
+          <div class="navRight">
+            <div class="icons" id="wishList">
+              <i class="far fa-heart"></i>
+            </div>
+            <div class="icons" id="signUp"><a href="signup.html" style="text-decoration: none; color: rgb(128, 140, 147);"><i class="far fa-smile"></i></a></i>`</div>
+            <div class="icons" id="basket">
+              <i class="fas fa-shopping-basket"></i>
+            </div>
+          </div>
+        </div>
+        <!-- testin -->
+        <div class="navBottom">
+          <ul class="navBottom_links">
+            <div class="dropdown">
+              <li><a href=""> SHOP CATEGORIE </a></li>
+              <div class="dropdown-content shopCategorie">
+                <div class="products-menu-dropDown">
+                     <ul class="products-menu-dropDown-links">
+                       <li class="dropLink"><a href="ProductPage.html"> Make Up</a></li>
+                       <!-- <div class="makeup-content">
+                           <div class="makeup-menu-dropdown">
+                             <ul class="makeup-manu-dropDown-links">
+                                 <li> <a href="">test</a></li>
+                                 <li> <a href="">test2</a></li>
+                             </ul>
+                           </div>
+                       </div> -->
+                       <li><a href="ProductPage.html">Skin Care</a></li>
+                       <li><a href="ProductPage.html">Personal Care</a></li>
+                       <li><a href="ProductPage.html">Men</a></li>
+                       <li><a href="ProductPage.html">Fragrance</a></li>
+                       <li><a href="ProductPage.html">Health & Wellness</a></li>
+                       <li><a href="ProductPage.html">Mom & Baby</a></li>
+                     </ul>
+                     <div class="drop-down-link-container-of-products" >
+                      <div class="drop-down-link-container-of-products-links">
+                        <h5>CLENSERS</h5>
+                         <p onclick="goToProductPage()">Facewash</p>
+                         <p onclick="goToProductPage()">Concealer</p>
+                         <p onclick="goToProductPage()">BB & Creams</p>
+                         <p onclick="goToProductPage()">Foundation</p>
+                         <p onclick="goToProductPage()">Compact</p>
+                         <p onclick="goToProductPage()">Loose Powder</p>
+                      </div>
+                      <div class="drop-down-link-container-of-products-links">
+                        <h5>EYE CARE</h5>
+                        <p onclick="goToProductPage()">Eye Masks & Patches</p>
+                         <p onclick="goToProductPage()">Eye Serum</p>
+                         <p onclick="goToProductPage()">Eye Cream</p>
+                         <p onclick="goToProductPage()">Eye Makeup & Remover</p>
+                      </div>
+                      <div class="drop-down-link-container-of-products-links">
+                        <h5>HAND & FOOT CARE</h5>
+                        <p onclick="goToProductPage()">Hand Wash & Soaps</p>
+                         <p onclick="goToProductPage()">Hand Sanitizers</p>
+                         <p onclick="goToProductPage()">Hand Cream</p>
+                         <p onclick="goToProductPage()">Foot Cream and Scrubs</p>
+                      </div>
+                      <div class="drop-down-link-container-of-products-links">
+                        <h5>TONER & FACE MISTS</h5>
+                        <p onclick="goToProductPage()">Tones</p>
+                         <p onclick="goToProductPage()">Face Mists</p>
+                         <p onclick="goToProductPage()">Lip Care</p>
+                         <p onclick="goToProductPage()">Lip Balms</p>
+                         <p onclick="goToProductPage()">Lip Scrubs</p>
+                      </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+              <li><a href="">BRANDS</a></li>
+              <div class="dropdown-content brands">
+                <div class="products-menu-dropDown brandsImages">
+                     <ul class="products-menu-dropDown-links">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1502367558_lakme.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1619515921_cloviabotaniqa_logo.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1542958594_logo-vayam.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1580226198_sugar-1.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1580226196_wow-science.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1555930990_nivea-logo-for-website.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1580226229_plum-3.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1510039591_gv-logo-1.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1580226150_garnier.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1515076955_logo.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1611164412_bh-logo-tab-120x55.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1580226126_ltous.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1481097651_stay-quirky.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1524057339_alps-logo.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1528376265_purplle-logo.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1540450028_logo_new.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1626342383_bblunt_120x55.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1626342382_vitress_120x55.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1610961840_sanity-logo.jpg" alt="">
+                       <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1530078890_australis-logo.jpg" alt="">
+                     </ul>
+                   </div>
+                </div>
+            </div>
+            <li><a href="">OFFERS</a></li>
+            <li><a href="">NEW</a></li>
+            <li><a href="">SPLURGE</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Below button for scroll up button -->
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+    
+    <div class="container">
+      <!-- For sliding page1 -->
+      <div class="slideShow">
+        <div class="sliderMain" id="slider_main_div">
+          <div class="slide left">
+            <span id="leftMoveSlider">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point1"></span>
+            <span id="point2"></span>
+            <span id="point3"></span>
+            <span id="point4"></span>
+            <span id="point5"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NEW LAUNCHES START -->
+      <div class="productSlideShow2">
+        <div class="newlaunches">
+          <img
+            src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1625474138_web-strip.jpg"
+            alt=""
+          />
+        </div>
+        <div id="parent_new_launches">
+          <main>
+            <span class="newlaunchbutton">&#10094;</span>
+            <span class="newlaunchbutton">&#10095;</span>
+            <section class="newlaunch_section">
+              <div class="new_launch_img_div">
+                <a href="#">
+                  <img
+                    class="new_launch_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1626348155_gv.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="new_launch_img_div">
+                <a href="#">
+                  <img
+                    class="new_launch_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1626348153_ag.jpg"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="new_launch_img_div">
+                <a href="#">
+                  <img
+                    class="new_launch_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1625474137_dd.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="new_launch_img_div">
+                <a href="#">
+                  <img
+                    class="new_launch_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1626338399_nyb.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="new_launch_img_div">
+                <a href="#">
+                  <img
+                    class="new_launch_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1625474135_sq.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <!-- NEW LAUNCHES END -->
+
+      
+      <div class="productSlideShow2"></div>
+
+
+    <div class="bannerImages">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887206_gv.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887208_ny-bae.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887208_sq-2.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887206_ag.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887204_dd.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626887204_purplle.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626888906_vayam.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626888906_asfa-halal.png" alt="">
+      <img src="https://media6.ppl-media.com/tr:w-1280,ar-51715-16654,c-at_max/mediafiles/ecomm/misc/1626941363_mcaffiene.png" alt="">
+    </div>
+    <div class="productSlideShow2"></div>
+    <div class="slideShow"></div>
+    <div class="trandingStore">
+      <div id="trading">
+        <div class="trendingHeadingImg">
+          <img
+              src="https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1620656284_trending-store-web.png" width="100%"
+            />
+      <!-- For sliding page2 -->
+      <div class="slideShow">
+       <div class="sliderMain" id="slider_main_div1">
+          <div class="slide left">
+            <span id="leftMoveSlider1">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider1">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point11"></span>
+            <span id="point12"></span>
+            <span id="point13"></span>
+          </div>
+        </div>
+      </div>
+      <div class="trandingStore">
+        <div id="trading">
+          <div class="newlaunches">
+            <img
+              src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1625474138_web-strip.jpg"
+              alt=""
+            />
+          </div>
+          <div class="tradingitems">
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1623760376_monsoon-store.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1621956184_natural-store.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1621956185_diy-store.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-512,ar-2-3,c-at_max/mediafiles/ecomm/misc/1621956186_k-beauty.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- For sliding page3 -->
+      <div class="slideShow">
+        <div class="sliderMain" id="slider_main_div2">
+          <div class="slide left">
+            <span id="leftMoveSlider2">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider2">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point21"></span>
+            <span id="point22"></span>
+            <span id="point23"></span>
+            <span id="point24"></span>
+            <span id="point25"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- GOOD VIBES START -->
+      <div class="productSlideShow2">
+        <div id="parent_goodvibes">
+          <main>
+            <span class="goodvibesbutton">&#10094;</span>
+            <span class="goodvibesbutton">&#10095;</span>
+            <section class="goodvibes_section">
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859463_gv-348x480-4.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626710836_wow-348x480-2.png"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626798962_plum-348x480-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626799053_tfs-348x480-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859465_ag-348x480-3-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859463_ny-bae-348x480-3-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626710839_mcaffeine-348x480-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626710839_moms-co-348x480-2.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626710840_faces-canada-348x480.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859461_sq-348x480-2-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859462_purplle-348x480-2-1.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859464_dd-348x480.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859466_asfa-348x480-3.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626710841_carmesi-348x480.png"
+                    alt=""
+                /></a>
+              </div>
+              <div class="goodvibes_img_div">
+                <a href="#">
+                  <img
+                    class="goodvibes_img_product"
+                    src="https://media6.ppl-media.com/tr:w-582,ar-29-40,c-at_max/mediafiles/ecomm/misc/1626859461_va-348x480-3.png"
+                    alt=""
+                /></a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+      <!-- GOOD VIBES END -->
+      <!-- <div class="slideShow"></div> -->
+
+      <!-- PURPLLE PICKS START -->
+      <div class="productSlideShow2">
+        <div class="purpllepicks">
+          <img
+            src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1625475218_web-strip.jpg"
+            alt=""
+          />
+        </div>
+        <div id="parent_purplle_picks">
+          <main>
+            <span class="purpllepicksbutton">&#10094;</span>
+            <span class="purpllepicksbutton">&#10095;</span>
+            <section class="purpllepicks_section">
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784213_gv.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626869427_nybae.jpg"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784201_ag.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784216_sq.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784215_pu.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784211_dd.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784210_artboard-11.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626784217_va.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="purpllepicks_img_div">
+                <a href="#">
+                  <img
+                    class="purpllepicks_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-613-810,c-at_max/mediafiles/ecomm/misc/1626869428_carmesi-3.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+
+
+      <!-- PURPLLE PICKS END -->
+      
+      <div class="trandingRightNowGrid">
+        <div id="trading">
+          <div class="trendingHeadingImg">
+            <img
+                src="https://media6.ppl-media.com/tr:w-1280,c-at_max/mediafiles/ecomm/misc/1620656284_trending-store-web.png" width="100%"
+              />
+          </div>
+          <div class="tradingitems">
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710060_neutrogena.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626795075_cetaphill.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626795092_myglamm.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710051_colorbar.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626616915_insight.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626795081_innisfree.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626795085_makeup-revolution.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626783020_vayam-ayurveda.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710055_juicy-chemistry.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710053_jovees.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626795094_o3.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710046_bronson-professional.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626698041_everyuth1.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626783018_asfa-halal.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626379637_st.botanica.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626710040_aya.jpg"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626788752_kama-600x900.png"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626788742_estee-lauder-600x900.png"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626788753_tfs-600x900.png"
+              />
+            </div>
+            <div>
+              <img
+                src="https://media6.ppl-media.com/tr:w-320,ar-2-3,c-at_max/mediafiles/ecomm/misc/1626788739_900.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- For sliding page4 -->
+      <div class="slideShow">
+        <div class="sliderMain" id="slider_main_div3">
+          <div class="slide left">
+            <span id="leftMoveSlider3">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider3">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point31"></span>
+            <span id="point32"></span>
+            <span id="point33"></span>
+            <span id="point34"></span>
+            <span id="point35"></span>
+          </div>
+        </div>
+      </div>
+       
+      <!-- TOP BRANDS FOR YOU START -->
+      <div class="productSlideShow2">
+        <div id="parent_top_brands">
+          <main>
+            <h3  class="top_brands_heading">TOP BRANDS FOR YOU</h3>
+            <span class="topbrandsbutton">&#10094;</span>
+            <span class="topbrandsbutton">&#10095;</span>
+            <section class="topbrands_section">
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373375_goodvibes.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373379_maybelline.jpg"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373383_wow.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373373_biotique.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373380_nybae.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373372_alps-goodness.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373380_plum.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373376_himalaya.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373381_sq.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373378_lotus.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373372_aroma-magic.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373377_lakme.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373381_purplle.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373377_loreal.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="topbrands_img_div">
+                <a href="#">
+                  <img
+                    class="topbrands_img_product"
+                    src="https://media6.ppl-media.com/mediafiles/ecomm/promo/1615373375_facescanada.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+
+       
+      <!-- TOP BRANDS FOR YOU END
+      <div class="trandingStore"></div> -->
+
+      <!-- For sliding page5 -->
+      <div class="slideShow">
+        <div class="sliderMain" id="slider_main_div4">
+          <div class="slide left">
+            <span id="leftMoveSlider4">&#10094;</span>
+          </div>
+          <div class="slide right">
+            <span id="rightMoveSlider4">&#10095;</span>
+          </div>
+          <div class="btm-sliders">
+            <span id="point41"></span>
+            <span id="point42"></span>
+            <span id="point43"></span>
+            <span id="point44"></span>
+            <span id="point45"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- BRAND STORES START -->
+      <div class="productSlideShow2">
+        <div class="brandstores">
+          <img
+            src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1620880262_brand-stores-web.png"
+            alt=""
+          />
+        </div>
+        <div id="parent_brand_stores">
+          <main>
+            <span class="brandstoresbutton">&#10094;</span>
+            <span class="brandstoresbutton">&#10095;</span>
+            <section class="brandstores_section">
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1605809792_bobbibrown-brand-tile.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1606716262_carmesi-widget-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-582-809,c-at_max/mediafiles/ecomm/misc/1625115013_brand-store-ne.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1598897729_clinique-store-tile.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1605183606_shakti-by-ny-bae-widget-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1585221956_good-vibes.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1580291664_faces-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1580291666_plum-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1585221954_stay-quirky.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1580291662_nivea-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1585221957_alps-goodness.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1582296360_1-2.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1585221954_derm-doc.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-582-809,c-at_max/mediafiles/ecomm/misc/1616649511_sugar-brand-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+              <div class="brandstores_img_div">
+                <a href="#">
+                  <img
+                    class="brandstores_img_product"
+                    src="https://media6.ppl-media.com/tr:w-512,ar-582-809,c-at_max/mediafiles/ecomm/misc/1617242712_asa-store.jpg"
+                    alt=""
+                /></a>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <!-- BRAND STORES END -->
+    </div>
+    <!-- VALUE SETS START -->
+    <div class="valueSets">
+      <div class="valuesetlogo">
+        <img
+          src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1615900388_value-sets_web.jpg"
+          alt="Value Sets Logo"
+        />
+      </div>
+      <div id="boxes">
+        <div class="box" id="paymentbox">
+          <div class="innerboxPayment">
+            <img
+              src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247950_secure-payment.jpg"
+              alt="Payment"
+              class="boximg"
+            />
+            <br />
+            <span id="paymentspan" class="span">100% Secure Payment</span>
+            <p class="value_para">All major credit & debit cards accepted.</p>
+          </div>
+        </div>
+        <div class="box" id="beautybox">
+          <img
+            src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247975_beauty-assistant.jpg"
+            alt="Beauty Assistance"
+            class="boximg"
+          />
+          <br />
+          <span class="span">Beauty Assistant</span>
+          <p class="value_para">
+            Tell me what are you looking for and i will work my<br />magic to
+            help you find your perfect match.
+          </p>
+        </div>
+        <div class="box" id="helpbox">
+          <div class="innerboxHelp">
+            <img
+              src="https://media6.ppl-media.com/mediafiles/ecomm/home/1499247997_help-center.jpg"
+              alt="Help Center"
+              class="boximg"
+            />
+            <br />
+            <span class="span">Help Center</span>
+            <p class="value_para">
+              Got a question? Look no further. Browse FAQ's or<br />submit your
+              query.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- VALUE SETS END -->
+<div class="videoContainerFrame">
+      <div class="videoContainer">
+        <div class="spotLight">
+          <h2>Spotlight</h2>
+          <iframe
+            width="400"
+            height="226"
+            src="https://www.youtube.com/embed/NrI9d0XiP7M"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <div class="shopOnTheGo">
+          <h2>Shop on the go</h2>
+          <img
+            _ngcontent-eyd-c12=""
+            class="w100p visible"
+            lazysrcvisible="visible"
+            src="https://media6.ppl-media.com/tr:w-512,ar-100-139,c-at_max/mediafiles/ecomm/misc/1605809792_bobbibrown-brand-tile.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="pageLinks">
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Makeup:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Primer</a> / <a href="">Foundation</a> /
+          <a href="">Lipstick</a> / <a href="">Eyeshadow</a> /
+          <a href="">Eyeliner</a> / <a href="">Kajal</a> /
+          <a href="">Concealer</a> / <a href="">Nail Polish</a> /
+          <a href="">Compact</a> / <a href="">Nail Polish</a> /
+          <a href="">Compact</a> / <a href="">Mascara</a> /
+          <a href="">Highliters & illuminators</a> /
+          <a href="">Makeup remover</a> / <a href="">BB & CC cream</a> /
+          <a href="">Lip Balm & Treatment</a> / <a href="">Eyebrow Enhancer</a
+          ><br />
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Skin:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Face Pack Masks & Peels</a> /
+          <a href="">Serum & Face oils</a> / <a href="">Face Wash</a> /
+          <a href="">Moisturizers</a> / <a href="">Toner</a> /
+          <a href="">Essential & Carrier Oils</a> / <a href="">Sheet Masks</a> /
+          <a href="">Scrubs & Exfoilators</a> / <a href="">Lip Balm & Care</a> /
+          <br />
+          <a href="">Sunscreen</a> /
+          <a href="">Body Lotions & Moisturizers</a> /
+          <a href="">Night Cream</a> / <a href="">Body Wash & Shower Gels</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Hair:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Shampoo</a> / <a href="">Conditioner</a> /
+          <a href="">Hair Serum</a> / <a href="">Hair Oil</a> /
+          <a href="">Hair Spa & Masque</a> / <a href="">Hair Treatment</a> /
+          <a href="">Babby shampoo </a> / <a href="">Dry Spa Kits</a> /
+          <a href="">Hair Spa Kits</a> / <a href="">Hair Nourishment Kit</a> /
+          <a href="">Hair Color </a> / <a href="">Hair Fiber</a> /
+          <a href="">Hair spray & Leave-in Cream </a> /
+          <a href="">Volumizing</a> / <a href="">Hair extensions</a> /
+          <a href="">Mousse Gels & Wax</a>/<a href="">Hair Styling Tool</a> /
+          <a href="">Hair Accessories</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Fragrence:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Perfumes</a> / <a href="">Deodrants & Roll-Ons</a> /
+          <a href="">Solid Perfumes</a> / <a href="">Aftershaves</a> /
+          <a href="">Colognes</a> / <a href="">Gifts & Value Sets For Men</a> /
+          <a href="">Gifts & Value Sets For Men</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Collections:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Castor Oil</a> / <a href="">Pastel Nail Polish </a> /
+          <a href="">Lakme 9 to 5</a> / <a href="">Black Kajol</a> /
+          <a href="">Sunscreen</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Brands:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Biotique</a> / <a href="">Wow</a> /
+          <a href="">Dermodac</a> / <a href="">Himalaya</a> /
+          <a href="">Darling Isabella</a> / <a href="">Maybelline</a> /
+          <a href="">Loreal</a> / <a href="">Good Vibes</a> /
+          <a href="">NY Bae</a> / <a href="">Stay Quirkly </a> /
+          <a href="">Aroma Magic</a> / <a href="">Alps Goodness</a> /
+          <a href="">Lotus</a> / <a href="">Purplle</a> / <a href="">Sugar</a> /
+          <a href="">Nivea</a> / <a href="">Lakme</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Men:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Perfumes</a> / <a href="">Deodrants & Roll Ons</a> /
+          <a href="">Face Wash</a> / <a href="">Shower Gels</a> /
+          <a href="">Soap</a> / <a href="">Body Scrub</a> /
+          <a href="">Talc</a> / <a href="">Shaving Cream</a> /
+          <a href="">Beard Oils</a> / <a href="">Razor</a> /
+          <a href="">After Shave</a> / <a href="">Beard Wash </a> /
+          <a href="">Grooming Kits</a> / <a href="">Shaving Accessories </a> /
+          <a href="">Hair Styling</a> / <a href="">Trimmers</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Accessories:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Necklace & Pendants</a> / <a href="">Earrings</a> /
+          <a href="">Rings</a> / <a href="">Bangles & Braclets</a> /
+          <a href="">Clips Bands & More</a>
+        </div>
+      </div>
+
+      <div class="linkContainer">
+        <div class="leftLinkContainer">
+          <a href="">Electronics:</a>
+        </div>
+        <div class="rightLinkContainer">
+          <a href="">Hair Straigtener</a> / <a href="">Hair Curler</a> /
+          <a href="">Hair Dryer</a> / <a href="">Electric Shaver</a> /
+          <a href=""> Trimmmers & Clippers</a> / <a href="">Epilators</a> /
+          <a href="">Massager.</a>
+        </div>
+      </div>
+     
+    </div>
+     <div class="footer">
+        <div class="eachFooter">
+          <h4>PURPLLE</h4>
+          <p>About us</p>
+          <p>Our Team</p>
+          <p>Careers</p>
+          <p>Press</p>
+          <p>Sitemap</p>
+        </div>
+        <div class="eachFooter">
+          <h4>PURPLLE BUSINESS</h4>
+          <p>Sell on Purplle</p>
+        </div>
+        <div class="eachFooter">
+          <h4>POLICY INFO</h4>
+          <p>Privacy Policy</p>
+          <p>Terms Of Use</p>
+          <p>Return & Cancellation Policy</p>
+        </div>
+        <div class="eachFooter">
+          <h4>NEED HELP?</h4>
+          <p>FAQ's</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+      <hr id="footerHoriLine" />    
+</body>
+</html>
+<script src="LandingPage.js"></script>
