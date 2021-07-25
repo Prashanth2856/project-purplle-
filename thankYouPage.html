@@ -14,73 +14,84 @@
       crossorigin="anonymous"
     ></script>
     <script
-    src="https://kit.fontawesome.com/7fe5a042ed.js"
-    crossorigin="anonymous"
-  ></script>
+      src="https://kit.fontawesome.com/7fe5a042ed.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <style>
-
-  .navMiddleContainer{
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: auto;
-  justify-content: center;
-  }
-  #tryElite{
-    width: 50px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  .navMid{
-    width: 40%;
-  }
-  .navMid > img{
-    height: 60.5938px;
-    width: 110px;
-  }
-  .navMid > img:hover{
-    cursor: pointer;
-  }
-  .navRight{
-    width: 40%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .icons{
-  margin-top: 100px;
-  margin: 20px;
-  font-size: 40px;
-  color: rgb(128, 140, 147);
-  }
-  .icons:hover{
-    cursor: pointer;
-  }
-  .navBottom_links li{
-    display: inline;
-    margin:0px 30px 20px 0px;
-    font-size: 16px;
-    font-weight: 600;
-  }
-  .navBottom_links a{
-    text-decoration: none;
-    color: black;
-  }
-  .navBottom_links a:hover{
-    border-bottom: solid 3px rgb(234,75,121);  
-    transform: scaleX(1);  
-    transition:  250ms ease-in-out;
-  }
-  .navBottom_links{
-    display: flex;
-    justify-content: center;
-  }
-  #search-icon{
+    .navMiddleContainer {
+      /* display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      justify-content: center; */
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: auto;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: fixed;
+      background-color: white;
+      z-index: 10;
+      top: 0;
+      box-shadow: 0px 0px 4px #2b303185;
+    }
+    #tryElite {
+      width: 50px;
+      height: 40px;
+      margin-bottom: 10px;
+    }
+    .navMid {
+      width: 40%;
+    }
+    .navMid > img {
+      height: 60.5938px;
+      width: 110px;
+    }
+    .navMid > img:hover {
+      cursor: pointer;
+    }
+    .navRight {
+      width: 40%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    .icons {
+      margin-top: 100px;
+      margin: 20px;
+      font-size: 40px;
+      color: rgb(128, 140, 147);
+    }
+    .icons:hover {
+      cursor: pointer;
+    }
+    .navBottom_links li {
+      display: inline;
+      margin: 0px 30px 20px 0px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .navBottom_links a {
+      text-decoration: none;
+      color: black;
+    }
+    .navBottom_links a:hover {
+      border-bottom: solid 3px rgb(234, 75, 121);
+      transform: scaleX(1);
+      transition: 250ms ease-in-out;
+    }
+    .navBottom_links {
+      display: flex;
+      justify-content: center;
+    }
+    #search-icon {
       font-size: 35px;
-  }
+    }
 
     #thankyou-container {
+      margin-top: 127px;
       width: 60%;
       margin: 8% auto 2%;
       height: 400px;
@@ -210,16 +221,15 @@
 
       <div class="navRight">
         <div class="icons" id="wishList">
-            <i class="fa fa-search icon" id="search-icon"></i>
+          <i class="fa fa-search icon" id="search-icon"></i>
         </div>
         <div class="icons" id="signUp"><i class="far fa-heart"></i></div>
         <div class="icons" id="basket">
-            <i class="far fa-smile"></i>
+          <i class="far fa-smile"></i>
         </div>
       </div>
-      
     </div>
-    <!-- -------------------- --> -->
+    <!-- -------------------- -->
     <div id="thankyou-container">
       <div class="thankyou">
         <div class="dot">
