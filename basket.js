@@ -13,7 +13,9 @@ let savedPrice = document.getElementById('s_price');
 
 
 let cartItem = 0;
+let indId = 0;
 function createElement(el) {
+  indId++;
   cartItem++;
     let individualProDiv = document.createElement("div");
     individualProDiv.setAttribute("id", "fDiv");
@@ -68,12 +70,55 @@ function createElement(el) {
     data_div.append(individualProDiv);
 }
 
+function updatePriceWithoutAddItemAgain(el) {
+  cartItem++;
+  realPrice += +el.priceWithDis;
+    
+  total.innerHTML = `₹${realPrice}`;
+
+  price += +el.price;
+  
+  realPr.innerHTML = `₹${price}`;
+    
+  saved = realPrice - price;
+  savedPrice.innerHTML = `-₹${saved}`
+  
+  oTotalPrice = price + 49;
+  oTotPrice.innerHTML = `₹${oTotalPrice}`
+  overallSaving = saved;
+  finallySaving.innerHTML = `₹${overallSaving}`
+  
+  myCartCount.innerHTML = `My Cart(${cartItem})`;
+}
+
+
+
+
 function fatchProducts(d) {
   let data = d;
     data_div.innerHTML = null;
-
-    data.forEach(function (el) {
+  let array = [];
+  data.forEach(function (el) {
+    if (array.length == 0) {
+      array.push(el);
+      createElement(el);
+      // console.log('first item')
+    } else {
+      let f = false;
+      array.forEach((element) => {
+        if (el.id == element.id) {
+          f = true;
+          updatePriceWithoutAddItemAgain(el);
+        } 
+      })
+      if (f == false) {
+        array.push(el);
         createElement(el);
+        // console.log('new item')
+      }
+    }
+    
+    
     })
 }
 fatchProducts(JSON.parse(localStorage.getItem('cart')));
@@ -89,11 +134,10 @@ function shopMore() {
 // // code for apply coupon
 let CouponDisc = 0;
 let couponDiscountt = document.getElementById("c");
+let couponInput = document.getElementById("couponInput");
 let countForDis = 0;
 function takeInput() {
   
-  
-  let couponInput = document.getElementById("couponInput");
   if (couponInput.value == "PURPLLE30" && countForDis == 0) {
     countForDis++;
     alert("Coupon Applied Successfully")
@@ -161,17 +205,39 @@ function checkout() {
 
 function removeItem(obj) {
   let data = JSON.parse(localStorage.getItem('cart'));
+  couponInput.value = null;
+  couponDiscountt.textContent = "APPLY COUPON";
+  countForDis = 0;
   
   // data.splice(0, 1)
+  let cnt = 0;
+  data.forEach((els) => {
+  
+    if (obj.name == els.name) {
+      cnt++;
+    }
+    
+  })
+  console.log('cnt: ', cnt)
+  // let d 
 
   let d = data.filter(function (el) {
-    return el.name != obj.name;
+    if (cnt >= 2 && obj.name == el.name) {
+      cnt--;
+      console.log('el :', el.name, obj.name)
+      // data.splice(idx, 1);
+      return el;
+    }
+    else {
+      return el.name != obj.name;
+    }
+    
   })
   // console.log(d);
 
   localStorage.setItem('cart', JSON.stringify(d))
 
-
+console.log("d ", d)
 
   data_div.innerHTML = null;
 
@@ -184,9 +250,11 @@ function removeItem(obj) {
   oTotalPrice = 0;
   overallSaving = 0;
 
-    d.forEach(function (element) {
-      createElement(element);
-    })
+  // d.forEach(function (element) {
+      //  updatePriceWithoutAddItemAgain(el);
+      // createElement(element);
+    fatchProducts(d)
+    // })
   
   if (d.length == 0) {
      cartItem = 0;

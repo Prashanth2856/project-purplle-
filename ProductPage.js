@@ -227,35 +227,35 @@ function scrolUp() {
 
 function collectProduct() {
   
-    function makeCopies(i, nam, p, d, b, pd) {
+    function makeCopies(i, nam, p, d, b, pd, id) {
         this.image = i;
         this.name = nam;
         this.price = p;
         this.discount = d;
         this.brand = b;
         this.priceWithDis = pd;
-        // this.number = n;
+        this.id = id;
     }
-    let pro1 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/207907/good-vibes-lightening-face-wash-mulberry-120-ml_1_display_1602905704_3927ad68.jpg","Good Vibes Lightening Face Wash - Mulberry (120 ml)",137, 30, "GoodVibes", 195 )
-    let pro2 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/175598/lakme-perfect-radiance-fairness-face-wash-50-g-22_2_display_1565341148_55d46b85.jpg","Lakme Absolute Perfect Radiance Skin Lightening Face Wash...",122, 24, "Lakme" , 160)
-    let pro3 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/246933/wow-skin-science-vitamin-c-face-wash-100-ml-17-46_8_display_1626326061_b9e36dba.jpg","WOW Skin Science Vitamin C Foaming Face Wash Pump (150 ml)",349, 5, "Wow", 366 )
-    let pro4 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/209635/mamaearth-vitamin-c-foaming-face-wash-with-vitamin-c-and-turmeric-150-ml_1_display_1601362718_aa831917.jpg","Mamaearth Vitamin C Foaming Face Wash with Vitamin C...",399, 15, "Mamaearth", 459 )
-    let pro5 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/158107/mamaearth-tea-tree-natural-face-wash-for-acne-and-pimples-wash-100-ml-for-normal-and-dry-skin_1_display_1551694455_91acf102.jpg","Mamaearth Tea Tree Natural Face Wash For Acne & Pimples Wash (100 ml)" ,212, 15, "Mamaearth", 249)
-    let pro6 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/201969/wow-skin-science-greek-yoghurt-face-wash-100-ml_1_display_1561448306_366b7545.jpg", "WOW Skin Science Greek Yoghurt Face Wash (100 ml)", 153, 39, "Wow", 249)
-    let pro7 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/209622/good-vibes-face-wash-rosemary-200-ml_1_display_1593780645_9e28efc5.jpg", "Good Vibes Hydrating Face Wash - Rosemary (200 ml)", 189, 30, "GoodVibes", 270)
-    let pro8 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/205429/lakme-absolute-perfect-radiance-facial-foam-130-ml1-89-19_1_display_1565255331_e206636a.jpg", "Lakme Absolute Perfect Radiance Facial Foam (130 ml)", 398, 25, "Lakme", 530)
-    let pro9 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/200887/mamaearth-coco-facewash-with-coffee-and-cocoa-for-skin-awakening-100-ml_1_display_1590732241_68b16512.jpg","Mamaearth CoCo Facewash, with Coffee & Cocoa for Skin Awakening (100 ml)",224, 10, "Mamaearth", 249 )
-    let pro10 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/201800/wow-anti-acne-neem-and-tea-tree-face-wash-oil-free-no-parabens-sulphate-silicones-and-color-100-ml_1_display_1569059493_abe294e9.jpg", "WOW Anti Acne Neem & Tea Tree Face Wash (100 ml)", 226, 9, "Wow", 249)
-    let pro11 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/230858/lakme-strawberry-clean-up-face-wash-100-g-50_8_display_1625223214_9d6afc1e.jpg", "Lakme Blush & Glow Strawberry Gel Face Wash (100 g)", 183, 15, "Lakme", 215)
-    let pro12 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/196243/good-vibes-refreshing-face-wash-vanilla-120-ml_1_display_1583408900_55a77bc7.jpg","Good Vibes Refreshing Face Wash - Vanilla (120 ml)",123, 30, "GoodVibes", 175 )
-    let pro13 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/225020/wow-skin-science-charcoal-foaming-face-wash-with-built-in-face-brush-100-ml-12_3_display_1610696567_081ae3c1.jpg", "WOW Skin Science Activated Charcoal Foaming Face Wash With...", 370, 7, "Wow", 399)
-    let pro14 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-top_rated_235x235small_1kce6dd9kH.png,ofo-top_right/static/img/product/192765/lakme-blush-and-glow-kiwi-freshness-gel-face-wash-with-kiwi-extracts-100-g_2_display_1565675104_092f1a9d.jpg","Lakme Blush & Glow Kiwi Crush Gel Face Wash (100 g)",191, 15, "Lakme", 225 )
-    let pro15 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/212204/wow-skin-science-himalayan-rose-foaming-face-wash-100-ml_2_display_1624861494_f460f34c.jpg","WOW Skin Science Himalayan Rose Foaming Face Wash With Pump(150 ml)",226, 35, "Wow", 349 )
-    let pro16 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/207897/good-vibes-foaming-face-wash-tea-tree-150-ml-1_11_display_1625565684_90432233.jpg","Good Vibes Foaming Face Wash - Tea Tree (150 ml)",165, 30, "GoodVibes", 235 )
-    let pro17 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/216514/mamaearth-tea-tree-face-wash-with-neem-for-acne-and-pimples-250-ml_1_display_1606132877_6a81710a.jpg", "Mamaearth Tea Tree Face Wash with Neem for Acne & Pimples (250 ml)", 359, 30, "Mamaearth", 399)
-    let pro18 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/212962/lakme-blush-and-glow-peach-gel-face-wash-100-g-10_2_display_1624453680_e1a8af19.jpg","Lakme Blush & Glow Peach Gel Face Wash (100 g)",199, 15, "Lakme", 225 )
-    let pro19 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/216513/mamaearth-vitamin-c-face-wash-with-vitamin-c-and-turmeric-for-skin-illumination-250-ml_1_display_1606132711_720b85a3.jpg","Mamaearth Vitamin C Face Wash with Vitamin C and Turmeric...",359, 10, "Mamaearth",399 )
-    let pro20 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/211592/good-vibes-gentle-cleansing-face-wash-lotus-and-sage-120-ml-1_2_display_1619765916_c433dd77.jpg","Good Vibes Gentle Cleansing Face Wash - Lotus & Sage (120 ml)",137, 30, "GoodVibes", 195 )
+    let pro1 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/207907/good-vibes-lightening-face-wash-mulberry-120-ml_1_display_1602905704_3927ad68.jpg","Good Vibes Lightening Face Wash - Mulberry (120 ml)",137, 30, "GoodVibes", 195, 1 )
+    let pro2 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/175598/lakme-perfect-radiance-fairness-face-wash-50-g-22_2_display_1565341148_55d46b85.jpg","Lakme Absolute Perfect Radiance Skin Lightening Face Wash...",122, 24, "Lakme" , 160, 2)
+    let pro3 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/246933/wow-skin-science-vitamin-c-face-wash-100-ml-17-46_8_display_1626326061_b9e36dba.jpg","WOW Skin Science Vitamin C Foaming Face Wash Pump (150 ml)",349, 5, "Wow", 366, 3 )
+    let pro4 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/209635/mamaearth-vitamin-c-foaming-face-wash-with-vitamin-c-and-turmeric-150-ml_1_display_1601362718_aa831917.jpg","Mamaearth Vitamin C Foaming Face Wash with Vitamin C...",399, 15, "Mamaearth", 459, 4 )
+    let pro5 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/158107/mamaearth-tea-tree-natural-face-wash-for-acne-and-pimples-wash-100-ml-for-normal-and-dry-skin_1_display_1551694455_91acf102.jpg","Mamaearth Tea Tree Natural Face Wash For Acne & Pimples Wash (100 ml)" ,212, 15, "Mamaearth", 249, 5)
+    let pro6 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/201969/wow-skin-science-greek-yoghurt-face-wash-100-ml_1_display_1561448306_366b7545.jpg", "WOW Skin Science Greek Yoghurt Face Wash (100 ml)", 153, 39, "Wow", 249, 6)
+    let pro7 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/209622/good-vibes-face-wash-rosemary-200-ml_1_display_1593780645_9e28efc5.jpg", "Good Vibes Hydrating Face Wash - Rosemary (200 ml)", 189, 30, "GoodVibes", 270, 7)
+    let pro8 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/205429/lakme-absolute-perfect-radiance-facial-foam-130-ml1-89-19_1_display_1565255331_e206636a.jpg", "Lakme Absolute Perfect Radiance Facial Foam (130 ml)", 398, 25, "Lakme", 530, 8)
+    let pro9 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/200887/mamaearth-coco-facewash-with-coffee-and-cocoa-for-skin-awakening-100-ml_1_display_1590732241_68b16512.jpg","Mamaearth CoCo Facewash, with Coffee & Cocoa for Skin Awakening (100 ml)",224, 10, "Mamaearth", 249, 9 )
+    let pro10 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/201800/wow-anti-acne-neem-and-tea-tree-face-wash-oil-free-no-parabens-sulphate-silicones-and-color-100-ml_1_display_1569059493_abe294e9.jpg", "WOW Anti Acne Neem & Tea Tree Face Wash (100 ml)", 226, 9, "Wow", 249, 10)
+    let pro11 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/230858/lakme-strawberry-clean-up-face-wash-100-g-50_8_display_1625223214_9d6afc1e.jpg", "Lakme Blush & Glow Strawberry Gel Face Wash (100 g)", 183, 15, "Lakme", 215, 11)
+    let pro12 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/196243/good-vibes-refreshing-face-wash-vanilla-120-ml_1_display_1583408900_55a77bc7.jpg","Good Vibes Refreshing Face Wash - Vanilla (120 ml)",123, 30, "GoodVibes", 175 , 12)
+    let pro13 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/225020/wow-skin-science-charcoal-foaming-face-wash-with-built-in-face-brush-100-ml-12_3_display_1610696567_081ae3c1.jpg", "WOW Skin Science Activated Charcoal Foaming Face Wash With...", 370, 7, "Wow", 399, 13)
+    let pro14 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max,oi-top_rated_235x235small_1kce6dd9kH.png,ofo-top_right/static/img/product/192765/lakme-blush-and-glow-kiwi-freshness-gel-face-wash-with-kiwi-extracts-100-g_2_display_1565675104_092f1a9d.jpg","Lakme Blush & Glow Kiwi Crush Gel Face Wash (100 g)",191, 15, "Lakme", 225, 14 )
+    let pro15 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/212204/wow-skin-science-himalayan-rose-foaming-face-wash-100-ml_2_display_1624861494_f460f34c.jpg","WOW Skin Science Himalayan Rose Foaming Face Wash With Pump(150 ml)",226, 35, "Wow", 349, 15 )
+    let pro16 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/207897/good-vibes-foaming-face-wash-tea-tree-150-ml-1_11_display_1625565684_90432233.jpg","Good Vibes Foaming Face Wash - Tea Tree (150 ml)",165, 30, "GoodVibes", 235 , 16)
+    let pro17 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/216514/mamaearth-tea-tree-face-wash-with-neem-for-acne-and-pimples-250-ml_1_display_1606132877_6a81710a.jpg", "Mamaearth Tea Tree Face Wash with Neem for Acne & Pimples (250 ml)", 359, 30, "Mamaearth", 399, 17)
+    let pro18 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/212962/lakme-blush-and-glow-peach-gel-face-wash-100-g-10_2_display_1624453680_e1a8af19.jpg","Lakme Blush & Glow Peach Gel Face Wash (100 g)",199, 15, "Lakme", 225, 18 )
+    let pro19 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/216513/mamaearth-vitamin-c-face-wash-with-vitamin-c-and-turmeric-for-skin-illumination-250-ml_1_display_1606132711_720b85a3.jpg","Mamaearth Vitamin C Face Wash with Vitamin C and Turmeric...",359, 10, "Mamaearth",399, 19 )
+    let pro20 = new makeCopies("https://media6.ppl-media.com/tr:h-235,w-235,c-at_max/static/img/product/211592/good-vibes-gentle-cleansing-face-wash-lotus-and-sage-120-ml-1_2_display_1619765916_c433dd77.jpg","Good Vibes Gentle Cleansing Face Wash - Lotus & Sage (120 ml)",137, 30, "GoodVibes", 195, 20 )
     
     let arr = [];
 
@@ -280,7 +280,7 @@ function collectProduct() {
     arr.push(pro19)
     arr.push(pro20)
 
-    console.log("arr ", arr)
+    // console.log("arr ", arr)
 
     if (localStorage.getItem('productlist') == null) {
         localStorage.setItem('productlist', JSON.stringify(arr));
@@ -297,7 +297,7 @@ function createElement(el) {
     img.src = el.image;
 
     img.setAttribute('id', 'gridImage');
-    console.log(img);
+    // console.log(img);
 
     let addToCart = document.createElement("button");
   addToCart.innerHTML = "ADD TO CART";
@@ -344,6 +344,7 @@ function add_To_Cart(obj) {
     arr = JSON.parse(localStorage.getItem("cart"));
   }
   arr.push(obj);
+  alert('Product added to cart successfully')
   localStorage.setItem("cart", JSON.stringify(arr));
 }
 
@@ -530,7 +531,7 @@ function priceRange1(){
       //  console.log(el.price)
       }
     })
-    console.log("messae",pr)
+    // console.log("messae",pr)
     productListDiv.innerHTML = null;
     pr.forEach(function (el) {
         createElement(el);
@@ -585,7 +586,7 @@ function discountRange1(){
 function brandDisplay1(){
   let pr = productList.filter(function(el){
     if(el.brand === "Lakme"){
-      console.log(el)
+      // console.log(el)
       return el
     }
   })
@@ -599,7 +600,7 @@ function brandDisplay2(){
 
   let pr = productList.filter(function(el){
     if(el.brand === "Wow"){
-      console.log(el)
+      // console.log(el)
       return el
     }
   })
@@ -613,7 +614,7 @@ function brandDisplay3(){
 
   let pr = productList.filter(function(el){
     if(el.brand === "Mamaearth"){
-      console.log(el)
+      // console.log(el)
       return el
     }
   })
@@ -627,7 +628,7 @@ function brandDisplay4(){
 
   let pr = productList.filter(function(el){
     if(el.brand === "GoodVibes"){
-      console.log(el)
+      // console.log(el)
       return el
     }
   })
