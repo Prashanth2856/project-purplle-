@@ -20,7 +20,9 @@ As you Know, It is a online beauty product shoping website of India. Where you c
 ### This is the Landing Page
 **When You open this website it will show you its Home page and you can choose any product from here or search catagory wise.**
 
-![homepage]()
+![LandingPage](https://user-images.githubusercontent.com/86742622/128631345-43ae4125-5b4d-4e61-a752-d5429f1b4e9e.jpg)
+
+
 
 **For buying any product you have to signup or login here**
 ![login]()
